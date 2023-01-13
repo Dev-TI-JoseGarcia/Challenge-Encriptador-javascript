@@ -1,0 +1,335 @@
+
+body{
+
+    
+    background: #F3F5FC;
+   
+}
+main{
+    position: relative;
+   
+     box-sizing: content-box;
+}
+
+.logo{
+    Width:31.09px;
+    Height:48px;
+  
+    position: absolute;
+    left: 36.67px;
+    right: 37.43px;
+    top: 44px;
+    bottom: 0%;
+}
+
+.ingresar-texto{
+
+/* Ingrese el texto aqui */
+
+
+position: absolute;
+width: 677px;
+height: 600px;
+left: 240px;
+top: 168px;
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+background: #F3F5FC;
+border: none;
+resize: none;
+
+outline: none;
+color: #0A3871;
+
+}
+
+.caja-resultado{
+
+position: absolute;
+width: 400px;
+height: 944px;
+left: 1000px;
+top: 40px;
+
+/* White */
+
+background: #FFFFFF;
+/* shadow */
+
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+border-radius: 32px;
+}
+
+.logo2{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    top: 283px;
+    left: 32px;
+    
+
+}
+.resultado{
+    position: relative;
+    top: 583px;
+    left: 32px;
+    width: 336px;
+height: 58px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+
+/* or 29px */
+border: none;
+text-align: center;
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+/* Gray/gray-500 */
+
+color: #343A40;
+
+}
+
+
+
+
+.caja-resultado p{
+position: relative;
+top: 583px;
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+text-align: center;
+
+/* Gray/gray-400 */
+
+color: #495057;
+
+}
+
+
+#resultado-false{
+    display: none;
+}
+#resultado-true{
+    display: none;
+}
+.mensaje-encriptado{
+    width: 357px;
+    height: 700px;
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 22px;
+    margin-bottom: 12px;
+    margin-right: 32px;
+    color: #0A3871;
+    resize: none;
+   border: none;
+   outline: none;
+   font-family: 'Inter';
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+
+}
+
+
+
+.copiar{
+    position: absolute;
+    margin-top: 786px;
+    margin-left: 42px;
+    margin-bottom: 72px;
+    margin-right: 872px;
+
+border-radius: 24px;
+
+width: 328px;
+height: 67px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+/* White */
+color: #0A3871;
+border-color: #0A3871;
+
+
+}
+.copiar:hover{
+    font-size: 25px;
+    border-color: lawngreen;
+    
+}
+
+
+
+.encriptador{
+    position: absolute;
+    margin-top: 822px;
+    margin-left: 240px;
+    margin-bottom: 72px;
+    margin-right: 872px;
+
+
+/* Dark blue/dark-blue-300 */
+
+background: #0A3871;
+border-radius: 24px;
+
+width: 328px;
+height: 67px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+/* White */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 1;
+}
+
+.encriptador:hover{
+    font-size: 25px;
+    border-color: lawngreen;
+    
+}
+
+.desencriptar{
+    /* Button */
+    position: absolute;
+    margin-top: 822px;
+    margin-left: 602px;
+    margin-bottom: 72px;
+    margin-right: 872px;
+
+box-sizing: border-box;
+
+
+
+width: 328px;
+height: 67px;
+
+/* Light gray */
+
+background: #D8DFE8;
+/* Dark blue/dark-blue-300 */
+
+border: 1px solid #0A3871;
+border-radius: 24px;
+
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+
+
+/* Dark blue/dark-blue-300 */
+
+color: #0A3871;
+}
+.desencriptar:hover{
+    font-size: 25px;
+    border-color: lawngreen;
+    
+}
+
+
+@media screen and (max-width:375px) {
+
+  .caja-texto{
+    position: absolute;
+    margin-bottom: 30px;
+    margin-left:-200px;
+  }
+  .caja-resultado{
+    position: absolute;
+    margin-top: 900px;
+    margin-left: -802px;
+   
+
+  }
+  #botones{
+    margin-left: -202px;
+  }
+ 
+}
+@media screen and (max-width:1280px) {
+
+    .caja-texto{
+      position: absolute;
+      margin-bottom: 30px;
+      margin-left:-200px;
+    }
+    .caja-resultado{
+      position: absolute;
+      height: 600px;
+      margin-left: -350px;
+     
+  
+    }
+    .mensaje-encriptado{
+        height: 400px;
+    }
+    .copiar{
+        margin-top:500px;
+    }
+    .resultado-false{
+        position: absolute;
+        margin-top: 20px;
+       
+    }
+    .logo2{
+        margin-top:-270px ;
+    }
+
+   .resultado{
+    margin-top: -200px;
+   }
+
+    .encriptador,.desencriptar{
+        width: 200px;
+    }
+    #botones{
+        position: absolute;
+        margin-top: -300px;
+      margin-left: -202px;
+    }
+   
+  }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+   
+    <script src="encriptar.js"></script>
+    <title>Challenge 1- Encriptador </title>
+</head>
+<body>
+    <main>
+     <section>
+         <div class="logo">
+             <img src="imagenes/alura.png" alt="Alura_logo">
+         </div>
+
+           <div class="caja-texto">
+           
+            <textarea name="ingresar-texto" id="ingresar-texto" value="" class="ingresar-texto" cols="1" rows="50" placeholder="Ingresar texto aqui."></textarea>
+           </div>
+         
+           <div class="caja-resultado">
+              
+              <div id="resultado-false">
+                <img class="logo2" src="imagenes/Muñeco.jpg" alt="logo2">
+                <div id="resultado" class="resultado"></div>
+                 <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+              </div>
+              
+              <div id="resultado-true">
+              <textarea name="mensaje-encriptado" readonly class="mensaje-encriptado" id="mensaje-encriptado" cols="1" rows="50" >
+               </textarea>
+                <input class="copiar"  name="copiar" type="button" value="Copiar"  onclick="copiar()">
+              </div>
+           
+
+           </div>
+             <div id="botones">
+               <input class="encriptador"  name="encriptador" type="button" value="Encriptador"  onclick="leer(1)">
+               <input class="desencriptar" name="desencriptador"  type="button" value="Desencriptar" onclick="leer(2)">
+              </div>
+            
+     </section>
+    </main>
+
+
+</body>
+</html>
