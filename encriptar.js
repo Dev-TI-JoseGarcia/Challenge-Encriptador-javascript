@@ -16,12 +16,14 @@ function reset()
     const num=0;
     document.getElementById("ingresar-texto").value="";
 }
+
 function leer(num)
 {
     
     for(var i=0;i<datos.length;i++)
     {
         texto+=datos[i].value;
+        
     }
     
     if(parseInt(texto.length)==0 && num==1 )
@@ -46,7 +48,7 @@ function leer(num)
         document.getElementById("resultado-false").style.display="none";
         document.getElementById("resultado-true").style.display="inline";
         
-         result=encripta(texto);
+         result=encripta(texto.toLowerCase());
       document.getElementById("mensaje-encriptado").value=result;
     
    reset();
@@ -102,5 +104,5 @@ function copiar()
     }
     document.getElementById("ingresar-texto").value="";
     document.getElementById("ingresar-texto").value=textcopy;
-
+    document.getElementById("resultado-true").style.display="none";
 }
